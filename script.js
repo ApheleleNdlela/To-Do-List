@@ -26,4 +26,6 @@ function Register() {
     password.value = "";
     repassword.value = "";
   }
+
+  window.location.href="Profile.html"
 }
