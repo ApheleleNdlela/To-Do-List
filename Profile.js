@@ -1,8 +1,10 @@
 const tbody = document.getElementById('tbody')
+// const myModal = document.getElementById('myModal')
+// const myInput = document.getElementById('myInput')
 
-const info = [{id: 1, title: "Lukhanyo", description: "Stubborn", date: "18/08/23", action: 'save' }];
+const info = [];
 
-function addTask() {
+function profile() {
 
 localStorage.setItem('info', JSON.stringify(info))
 JSON.parse(localStorage.getItem('info'))
@@ -16,12 +18,35 @@ rows+= `<tr>
     <td>${data.title}</td>
     <td>${data.description}</td>
     <td>${data.date}</td>
-    <td>${data.action}</td>
+    <td>
+    <button>edit</button>
+    <button>delete</button>
+    </td>
 
 </tr>`
 
 tbody.innerHTML= rows
+profile()
 })
-    
+
 }
-addTask()
+profile();
+
+function viewItem(){
+
+JSON.parse(localStorage.getItem(info))
+
+
+}
+    
+
+
+
+
+
+
+
+
+
+
+
