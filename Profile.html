@@ -41,7 +41,7 @@
                       </div>
                   </div>
       
-                    <div class="mb-0 p-1">
+                    <div class="mb-0 p-1 description" >
       
                       <div class="form-outline mb-3 d-flex">
       
@@ -90,7 +90,7 @@
                 <div class="card-body" data-mdb-perfect-scrollbar="true" style="position: relative; height: 400px">
       
                   <table class="table mb-0">
-                    <thead>
+                    <thead id="thead">
                       <tr>
                         <th scope="col" id="number">#</th>
                         <th scope="col" id="title">Title</th>
@@ -99,7 +99,9 @@
                         <th scope="col" id="actions">Actions</th>
                       </tr>
                     </thead>
-                    <tbody id="showbody"></tbody>
+                    <tbody id="showbody">
+                
+                    </tbody>
                   </table>
       
                 </div>
@@ -125,7 +127,7 @@
         <h1 class="modal-title fs-5" id="exampleModalLabel">Edit Task</h1>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary d-flex justify-content-end" data-bs-dismiss="modal">Reset</button>
-          <button type="button" class="btn btn-primary d-flex justify-content-end">Save</button>
+          <button type="button" class="btn btn-primary d-flex justify-content-end" id="showbody" onclick="edit(this)">Save</button>
         </div>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
